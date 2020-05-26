@@ -2,14 +2,10 @@
 console.log('8:55 AM 5/26/2020');
 
 // handle bar js script checkbox
-// compile the template
-var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
-
-
 document.getElementById('btnLoadData').onclick = function () {
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', 'https://aimtell.com/files/sites.json');
-    
+
     ourRequest.onload = function () {
         if (ourRequest.status >= 200 && ourRequest.status < 400) {
             // This is where we'll do something with the retrieved data
