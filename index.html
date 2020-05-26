@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FED Quiz - Karthikeyan - tkarthikeyan@gmail.com</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script id="introduction-template" type="text/x-handlebars-template">
+      {{#each sites}}
+    <tr class="sites">
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{url}}</td>
+    </tr>
+    {{/each}}
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Dev Quiz: Front End</h1>
+        <p>quiz tests your ability to use key languages and tools used day to day at PushPROS!</p> 
+      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <button class="btn btn-primary float-right m-4" id="btnLoadData"> Load Data</button>
+            </div>
+            <div class="col-md-12">
+                <table class="table">
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>url</th>
+                        </tr>
+                    </thead>
+                    <tbody class="introduction">
+
+                        <tr class="sites">
+                            <td></td>
+                            <td>-- No data --</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Jquery JavaScript -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- handlebars JavaScript -->
+    <script src="/node_modules/handlebars/dist/handlebars.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
