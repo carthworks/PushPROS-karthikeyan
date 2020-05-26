@@ -1,0 +1,21 @@
+{
+  "name": "pushpros",
+  "version": "1.0.0",
+  "description": "This quiz tests your ability to use key languages and tools used day to day at PushPROS. ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "handlebar",
+    "carthworks",
+    "quiz"
+  ],
+  "author": "KarthikeyanT tkarthikeyan@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.1"
+  }
+}
